@@ -7,9 +7,23 @@ head
     link(href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
     link(href='css/animate.css' rel='stylesheet' type='text/css')
-    section#main-content.full-height.text-center 
 body
     .col-md-5.center-block.no-float.top-space.text-left
         h1 Agregar producto
-        form(method="post" action="/menu")
+        form(method="post" action="/menu" style="margin-top=1.5em;") 
+            .form-group
+                label Nombre
+                input.form-control(type="text" name="title" placeholder="Nombre del producto")
+            .form-group
+                label Descripción
+                textarea.form-control(name="description" placeholder="Decripción del producto")
+            .form-group
+                label Costo
+                textarea.form-control(type="number" name="pricing" placeholder="Contraseña")
+            .form-group
+                label Contraseña
+                input.form-control(type="password" name="title" placeholder="Nombre del producto")
+            .form-group.text-right
+                label 
+                input.bton.btn-info(type="submit" name="title" value="Guardar")
 

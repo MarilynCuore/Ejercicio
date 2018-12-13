@@ -27,6 +27,10 @@ app.get("/",(req,res)=>{
     })*/ 
     res.render("index") 
 })
+app.post("/menu/new", (req,res)=>{
+    console.log(solicitud)
+    respuesta.render("menu/new")
+})
 app.get("/menu/new", (req,res)=>{
     res.render("menu/new")
 })
