@@ -1,29 +1,22 @@
-doctype html
-head
-    title El mejor lugar del mundo!
-    meta(charset='utf-8')
-    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet')
-    link(href='css/main.css' rel='stylesheet')
-    link(href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
-    link(href='css/animate.css' rel='stylesheet' type='text/css')
-body
-    .col-md-5.center-block.no-float.top-space.text-left
-        h1 Agregar producto
-        form(method="post" action="/menu" style="margin-top=1.5em;") 
-            .form-group
-                label Nombre
-                input.form-control(type="text" name="title" placeholder="Nombre del producto")
-            .form-group
-                label Descripción
-                textarea.form-control(name="description" placeholder="Decripción del producto")
-            .form-group
-                label Costo
-                textarea.form-control(type="number" name="pricing" placeholder="Contraseña")
-            .form-group
-                label Contraseña
-                input.form-control(type="password" name="title" placeholder="Nombre del producto")
-            .form-group.text-right
-                label 
-                input.bton.btn-info(type="submit" name="title" value="Guardar")
+extends ../layout.pug
+block contenido
+    section#main-content.full-height.text-center
+        .col-md-5.center-block.no-float.top-space.text-left
+            h1 Agregar producto
+            form(method="post" action="/menu" style="margin-top=1.5em;") 
+                .form-group
+                    label Nombre
+                    input.form-control(type="text" name="title" placeholder="Nombre del producto")
+                .form-group
+                    label Descripción
+                    textarea.form-control(name="description" placeholder="Decripción del producto")
+                .form-group
+                    label Costo
+                    textarea.form-control(type="number" name="pricing" placeholder="Contraseña")
+                .form-group
+                    label Contraseña
+                    input.form-control(type="password" name="title" placeholder="Nombre del producto")
+                .form-group.text-right
+                    label 
+                    input.bton.btn-info(type="submit" name="title" value="Guardar")
 
