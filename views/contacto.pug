@@ -1,0 +1,24 @@
+extends ./layout.pug
+block contenido
+  section#main-content.full-height.text-center
+    .data
+      nav.large-padding.fondo-gris
+        ul.no-list.mediano
+          li.pacifico.col-md-3.inline-block
+            a.green(href='/')
+              | Food Facilito 
+              small.lato.small Vive, convive y divi&eacute;rtete
+          li.col-md-3.inline-block
+            
+          li.col-md-3.inline-block
+            a(href='/acerca') Acerca de
+      .menu.mediano
+        h2.pacifico.big.blue Menu
+        p Palacio de Bellas Artes, Centro Hist&oacute;rico, Cuauht&eacute;moc, Ciudad de M&eacute;xico
+        p
+          | Escribenos a 
+          a(href='mailto:info@codigofacilito.com') info@codigofacilito.com
+        .col-md-7.col-sm-9.col-xs-12.inline-block.tope
+          iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3762.472147824537!2d-99.1412!3d19.435200000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b75aa014d%3A0x17d810d20da6e8cf!2sPalacio+de+Bellas+Artes!5e0!3m2!1ses!2smx!4v1418092440850' width='600' height='450' frameborder='0' style='border:0')
+  script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+  script(src='js/main.js')

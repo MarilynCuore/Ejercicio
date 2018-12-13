@@ -1,0 +1,15 @@
+extends ./layout.pug
+block contenido
+  section#main-content.full-height.text-center
+    .data
+      .col-md-3.center-block.no-float.top-space
+        img.animated.fadeIn(src='imgs/icecream.png')
+        h1.pacifico.big.green.animated.fadeIn.delay-1  Food Facilito 
+        .animated.fadeInDown.delay-2
+          h2 Ven, convive, diviértete.
+          nav
+            a.right-space Menu
+            a.right-space(href='/contacto') Contacto
+            a.right-space(href='/acerca') Acerca de
+  script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+  script(src='/js/main.js') 
